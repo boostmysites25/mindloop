@@ -19,6 +19,7 @@ import AIDevelopment from "./componets/website/serivces/AIDevelopment.jsx";
 import FullStackWebDevelopment from "./componets/website/serivces/FullStackWebDevelopment.jsx";
 import MachineLearning from "./componets/website/serivces/MachineLearning.jsx";
 import GameDevelopment from "./componets/website/serivces/GameDevelopment.jsx";
+import DigitalMarketing from "./componets/website/serivces/DigitalMarketing.jsx";
 // import MachineLearning from "./componets/website/serivces/MachineLearning.jsx";
 // import CloudComputing from "./componets/website/serivces/CloudComputing.jsx";
 // import RPA from "./componets/website/serivces/RPA.jsx";
@@ -79,9 +80,7 @@ export default function App() {
             />
             <Route path="machine-learning" element={<MachineLearning />} />
             <Route path="game-development" element={<GameDevelopment />} />
-            {/* <Route path="machine-learning" element={<MachineLearning />} />
-            <Route path="cloud-computing" element={<CloudComputing />} />
-            <Route path="RPA" element={<RPA />} /> */}
+            <Route path="digital-marketing" element={<DigitalMarketing />} />
           </Route>
 
           {/* Landing Pages */}

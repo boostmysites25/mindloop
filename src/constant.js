@@ -63,6 +63,7 @@ import { CgWebsite } from "react-icons/cg";
 import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
 import { RiCustomSize } from "react-icons/ri";
 import { TbDeviceMobileCode } from "react-icons/tb";
+import { MdOutlineCampaign } from "react-icons/md";
 
 // service images
 import vrar from "./assets/images/services/vrar.jpg";
@@ -71,6 +72,7 @@ import ai from "./assets/images/services/ai.jpg";
 import web from "./assets/images/services/web.jpg";
 import machine from "./assets/images/services/machine.jpg";
 import game from "./assets/images/services/game.jpg";
+import digitalMarketing from "./assets/images/services/digital-marketing.webp";
 import Blogs from "./pages/website/Blogs";
 
 const Home = lazy(() => import("./pages/website/Home"));
@@ -121,6 +123,7 @@ export {
   web,
   machine,
   game,
+  digitalMarketing,
 };
 
 // company details
@@ -334,6 +337,15 @@ export const allServices = [
     desc: "Create captivating gaming experiences across platforms. From mobile games to immersive VR adventures, we bring interactive entertainment concepts to life.",
     detailContent:
       "Our game development services cover everything from casual mobile games to complex VR/AR experiences. Using Unity and Unreal Engine, we create immersive worlds with rich storytelling and engaging mechanics. Services include full-cycle development from concept art to final deployment, multiplayer system integration, and cross-platform optimization. We specialize in creating interactive experiences that combine stunning visuals with responsive gameplay, whether developing educational simulations or competitive esports titles.",
+  },
+  {
+    id: 7,
+    img: <MdOutlineCampaign className="w-6 h-6" />,
+    link: "/services/digital-marketing",
+    title: "Digital Marketing",
+    desc: "Amplify your brand's reach and drive growth through strategic digital marketing solutions. We create comprehensive campaigns that connect with your audience and deliver measurable results.",
+    detailContent:
+      "Our digital marketing services encompass SEO optimization, social media management, content marketing, and paid advertising campaigns. We develop data-driven strategies that enhance your online presence and drive qualified leads. Services include search engine optimization, social media marketing, email campaigns, and analytics tracking. Using advanced tools and AI-powered insights, we optimize campaigns for maximum ROI, helping businesses build strong brand awareness and achieve sustainable growth in competitive digital landscapes.",
   },
 ];
 
@@ -589,7 +601,7 @@ export const aboutUsItems = [
   {
     title: "Client-Centric Approach",
     description:
-      "We prioritize your vision by tailoring every project to your goals—whether it’s developing an intelligent chatbot, streamlining operations with RPA, or launching a next-gen mobile app. Our collaborative style ensures long-term partnerships built on trust and results.",
+      "We prioritize your vision by tailoring every project to your goals—whether it's developing an intelligent chatbot, streamlining operations with RPA, or launching a next-gen mobile app. Our collaborative style ensures long-term partnerships built on trust and results.",
     image: abouttwo,
     gradient: "from-secondary/60 to-secondary/80",
   },
@@ -610,8 +622,66 @@ export const aboutUsItems = [
   {
     title: "End-to-End Digital Solutions",
     description:
-      "We support your entire digital journey—from idea validation and UI/UX design to deployment, cloud management, and post-launch optimization. Whether you're scaling a product or starting from scratch, we’ve got you covered at every stage.",
+      "We support your entire digital journey—from idea validation and UI/UX design to deployment, cloud management, and post-launch optimization. Whether you're scaling a product or starting from scratch, we've got you covered at every stage.",
     image: aboutfive,
     gradient: "from-primary/60 to-primary/80",
   },
+];
+
+// blog data
+export const blogData = [
+  {
+    id: 1,
+    title: "The Future of AI: Transformative Trends Shaping Tomorrow",
+    url: "https://mindloopsolutionsreview.blogspot.com/2024/12/futureofAI-mindloopdevelopment.html",
+    excerpt: "Exploring the future of artificial intelligence and how Mindloop Solutions is shaping the development landscape.",
+    date: "December 2024",
+    category: "AI Development",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixkKYOkFvMwMEXS5rCW2dtl2rTh792B_Vx-kp4JB80X_e_Fd7fGBf4w5W-aFyp54mtJms7xwRDb6fIGeRbYzl1AUt3eMZLe-vthprQqcaGACqL4tDLfKFbjPWMQzGfKsCpABB0OVyLrLFgeshdOT6sxSqtLapKLGobS64d4_shRgrIYODuWku4ZndiOOZ6/w400-h229/DALL%C2%B7E%202024-12-11%2018.08.59%20-%20A%20visually%20captivating%20digital%20artwork%20representing%20the%20theme%20'The%20Future%20of%20AI_%20Transformative%20Trends%20Shaping%20Tomorrow.'%20The%20scene%20features%20a%20harmoni.webp"
+  },
+  {
+    id: 2,
+    title: "Beyond Imagination: AI, AR & Digital Marketing Future",
+    url: "https://mindloopsolutionsreview.blogspot.com/2025/09/beyond-imagination-ai-ar-digital.html",
+    excerpt: "Discover how AI and AR technologies are revolutionizing digital experiences beyond our wildest imagination.",
+    date: "September 2025",
+    category: "Technology",
+    image: require('./assets/images/blogs/2.webp')
+  },
+  {
+    id: 3,
+    title: "The Role of AR and VR in Enhancing User Experience: Mindloop Solutions' Approach",
+    url: "https://mindloopsolutionsreview.blogspot.com/2025/09/the-role-of-ar-and-vr-in-enhancing-user.html",
+    excerpt: "Understanding how augmented and virtual reality technologies are transforming user interactions and experiences.",
+    date: "September 2025",
+    category: "AR/VR",
+    image: require('./assets/images/blogs/3.webp')
+  },
+  {
+    id: 4,
+    title: "Mindloop Solutions: Pioneering the Future of AI Innovation ",
+    url: "https://mindloopsolutionsreview.blogspot.com/2024/11/about-mindloopcompany.html",
+    excerpt: "Learn about Mindloop Solutions LLP, our mission, vision, and commitment to delivering cutting-edge technology solutions.",
+    date: "November 2024",
+    category: "Company",
+    image: require('./assets/images/blogs/4.webp')
+  },
+  {
+    id: 5,
+    title: "Product/Service Showcase: Transforming Business with Mindloop Solutions",
+    url: "https://mindloopsolutionsreview.blogspot.com/2024/11/product-showcase-mindlopp.html",
+    excerpt: "A comprehensive showcase of Mindloop's innovative products and solutions that are transforming industries.",
+    date: "November 2024",
+    category: "Products",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirHUYqypBW4Iw_bJhagfAm9auwu8-YAO9b5SkiaDDuVFMT8or2tKeTmV6_1mO8EzXPYdEK63pN4KPD5e8ec9MyEDePCFRw4Q1a9S0zbiE4BeKfcoL-r-YRsHQBgWO8RLkTUlkyACEyphmptJ_uWUshnHWwVbikCDEo_0HDFM3xHBqFAQGzZsEqORL8jgg1/w640-h339/rendering-anime-doctors-work.jpg"
+  },
+  {
+    id: 6,
+    title: "AI for Growth: How Mindloop Solutions is Shaping the Future of Business ",
+    url: "https://mindloopsolutionsreview.blogspot.com/2024/12/growth-mindloop.html",
+    excerpt: "Exploring Mindloop's journey of growth, innovation, and success in the technology industry.",
+    date: "December 2024",
+    category: "Growth",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqLcZp6TmXTDECpEbujlZ9SlpWa0eqQ8QWAOgreWEwDMj16SjL4-gsFJnwbvkz8lF0f4yVM9rxmqb5t92OPkW9gqq7WQ7WpKxpwZbZlDhm_04DrvvskcFOpyFXAlHBG18CTlG0pM_daCwsx-baWyf3xImjdUvSjgbmprRE8FLGDQ6lCTSbW2y09RUnmPpO/w640-h360/image.png"
+  }
 ];
