@@ -72,10 +72,14 @@ const Home = () => {
                 innovation to drive your success. We specialize in creating
                 powerful digital experiences and delivering solutions that
                 simplify complex challenges. With a wide range of services from
-                mobile and web development to AI and data intelligence, we’re
-                here to help you unlock new potential and stay ahead in today’s
+                mobile and web development to AI and data intelligence, we're
+                here to help you unlock new potential and stay ahead in today's
                 fast-paced digital landscape.
               </p>
+              <div className="mt-4 flex flex-col gap-1">
+                <p className="text-lg font-semibold text-primary">Kasiraja K.</p>
+                <p className="text-sm text-primarytextcolor/80">CEO</p>
+              </div>
             </div>
             <div className="flex gap-5 mt-4 justify-center lg:justify-start">
               <Link to="/contact-us" className="primary-btn">
